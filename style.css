@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --marrom-escuro:#473404;
+  --marrom: #191816;
+  --marrom-claro: #24221f;
+  --amarelo: #ffc632;
+  --amarelo-claro: #f8d376 ;;
+  --cinza: #afb6c2;
+  --branco:#ffffff;
+  font-size: 62.5%;
+  font-family: "Poppins";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--marrom);
+  font-size: 1.6rem;
+}
+
+#page {
+  height: 100vh;
+}
+
+#page > * {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+header > img {
+  width: 11.5rem;
+  height: 2.8rem;
+}
+
+#page > div {
+  padding: 4rem 11.2rem;
+}
+
+main {
+  margin-top: 11.4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 2rem 0;
+  background-color: var(--marrom-claro);
+  border-radius: 0.5rem;
+}
+h1{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.title {
+  max-width: 35rem;
+}
+
+h1, p, label{
+  font-weight: 600;
+  color: var(--cinza);
+}
+
+
+
+form {
+  margin-top: 3rem;
+  
+}
+
+
+form .input-wrapper + .input-wrapper{
+  margin-top: 1.6rem;
+}
+
+.input-wrapper{
+  position: relative;
+}
+
+form input{
+  width: 100%;
+  background-color: var(--marrom-claro);
+  border: 0.3rem solid var(--cinza);
+  border-radius: 0.4rem;
+  padding: 1.6rem 1.2rem;
+  color: var(--branco);
+  margin-top: 0.8rem;
+}
+
+form input:focus{
+  border-color: var(--amarelo);
+}
+
+form button {
+  all: unset; /*Tira as propriedade do button*/
+  text-align: center;
+  padding: 1.6rem 2.4rem;
+  background-color: var(--amarelo);
+  border-radius: 0.4rem;
+  width: 83%;
+  margin-block: 3.2rem;
+
+  /*fonte*/
+  font-style: normal;
+  font-weight: 600;
+  color: var(--marrom-escuro);
+  text-transform: uppercase;
+}
+
+form button:active,
+form button:hover {
+  outline: 2px solid var(--amarelo);
+  background-color: var(--amarelo-claro);
+}
+
+.eye{
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 57%;
+  right: 5%;
+}
+
+.hide{
+  display: none;
+}
+
+a,.help{
+  font-weight: 600;
+  color: var(--amarelo);
+}
+
+.flex {
+  display: flex;
+}
